@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: white;
+}
+.container{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 100px;
+  flex-direction: column;
+}
+.light{
+  height: 300px;
+  width: 300px;
+  background-image: url("bulb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.switch{
+  height: 40px;
+  width: 150px;
+  background: black;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+a{
+  text-decoration: none;
+  position: absolute;
+  top: 5%;
+  color:white;
+  padding: 10px;
+  background: black;
+
+}
+.text{
+  font-weight: 1000;
+  font-size: 20px;
+}
+.photo{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  background-image: url("ac.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  top: -100%;
+  transition: 0.5s ;
+}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable = no">
+  <link rel="stylesheet" href="style.css">
+  <title>Bijli Ka Bill Tera Baap Varega </title>
+</head>
+<body>
+  <div class="container">
+    <a href="https://www.youtube.com/@codenath">My Youtube Channel</a>
+    <div class="text">Press The Button To Turn ON The Light</div>
+    <div class="light"></div>
+    <button class="switch">Press Me</button>
+    <div class="photo"></div>
+  </div>
+</body>
+<script type="text/javascript">
+  let btn = document.querySelector(".switch");
+  let photo = document.querySelector(".photo");
+  let sound = new Audio("sfx.mp3");
+  btn.addEventListener("click", event =>{
+    sound.play();
+    photo.style.top = "30%";
+    navigator.vibrate(2000);
+  })
+</script>
+</html>
